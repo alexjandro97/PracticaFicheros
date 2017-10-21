@@ -507,6 +507,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void secuencialBtnMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_secuencialBtnMousePressed
+       //propiedades del JDialog
         secuencialDialog.setIconImage(new ImageIcon(getClass().getResource("/img/folder.png")).getImage());
         secuencialDialog.setVisible(true);
         secuencialDialog.setLocation(470, 175);
@@ -524,6 +525,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_volverSecuenciaBtnMousePressed
 
     private void aleatorioBtnMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aleatorioBtnMousePressed
+        //propiedades del JDialog
         aleatorioJDialog.setIconImage(new ImageIcon(getClass().getResource("/img/folder.png")).getImage());
         aleatorioJDialog.setVisible(true);
         aleatorioJDialog.setLocation(470, 175);
@@ -537,6 +539,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_volverAleatorioBtnMousePressed
 
     private void crearBtnMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_crearBtnMousePressed
+       //propiedades del JDialog
         crearCosasJDialog.setIconImage(new ImageIcon(getClass().getResource("/img/folder.png")).getImage());
         crearCosasJDialog.setVisible(true);
         crearCosasJDialog.setLocation(450, 175);
@@ -554,6 +557,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_CrearCosasBtnMousePressed
 
     private void copyBtnMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_copyBtnMousePressed
+        //propiedades del JDialog
         copiarFicheroJDialog.setIconImage(new ImageIcon(getClass().getResource("/img/folder.png")).getImage());
         copiarFicheroJDialog.setVisible(true);
         copiarFicheroJDialog.setLocation(450, 175);
@@ -746,6 +750,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 //    }
     
     private void volver(){
+        //metodo con un swift para utilizarlo en los botones de volver, en funcion de en que JDialog nos encontremos
         switch (localizador) {
             case 1 : secuencialDialog.setVisible(false);break;
             case 2 : aleatorioJDialog.setVisible(false);break;
